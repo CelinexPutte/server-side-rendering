@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Rajhandi";
+    src: url("assets/fonts/Rajdhani-SemiBold.ttf") format("ttf"),
+        url("assets/fonts/Rajdhani-SemiBold.woff") format("woff");
+        font-weight: 600;
+}
+
+@font-face {
+    font-family: "Rajhandi";
+    src: url("assets/fonts/Rajdhani-Bold.ttf") format("ttf"),
+        url("assets/fonts/Rajdhani-Bold.woff") format("woff");
+        font-weight: 700;
+}
+
+@font-face {
+    font-family: "Rajhandi";
+    src: url("assets/fonts/Rajdhani-Regular.ttf") format("ttf"),
+        url("assets/fonts/Rajdhani-Regular.woff") format("woff");
+        font-weight: 400;
+}
+
+:root {
+    --blue-color: #110f2a;
+    --purple-color: #524dd0;
+    --green-color: #00ffec;
+    --background-color: #d8e9f2;
+    --black-color: #000;
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rajhandi, sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: var(--black-color);
+}
+
+:focus {
+    outline: 2px solid var(--green-color);
+    border-radius: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+html {
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--white-color);
+    padding: 10px;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 1rem;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -2px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.menu-bar {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.logo {
+    width: 5rem;
+    height: auto;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #bbbbbb;
+    margin-bottom: 1rem;
+}
+
+.sz-card {
+    width: 20rem;
+    height: 10rem;
+    border: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.sz-card img {
+    width: 7rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 13rem;
+    padding: 0.5rem 0;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.buttons {
+    flex-direction: row;
+}
+
+
+
+/* .map {
+    width: 70%;
+    height: auto;
+}
+
+.map > img {
+    width:max-content;
+    height: auto;
+    object-fit: cover;
+} */

@@ -1,31 +1,37 @@
 <%- include('./partials/head') %>
 
 <main>
-    <section>
+    <section class="menu-bar">
+        <img src="assets/img/logo-purple.png" alt="Logo Coding the Curbs" class="logo">
         <h1>Smartzones</h1>
         <% smartzones.forEach(smartzone => { %>
-            <article>
-                <img src="<%- smartzone.image[0].url %>" alt="Foto van smartzone <%= smartzone.name %>">
-                <% if (smartzone.reservation === null) { %>
-                 <p>Now available</p> <!-- Icon toevoegen -->
-                    <% } else { %>
-                  <p>Occupied</p> <!-- Icon toevoegen -->
-                <% } %>
-                <!-- Icon hartje toevoegen -->
-                <h2>SZ <%= smartzone.name %></h2>
-                <p><%= smartzone.address %>, <%= smartzone.town %></p>
-                <p><span>Price:</span> €1,00 / 15 min</p> <!-- Voor nu hard code omdat die gegevens nog ontbreken -->
-                <button>Book now</button>
-                <button>Book later</button>
+            <article class="sz-card">
+                <div class="card-left-side">
+                    <img src="<%- smartzone.image[0].url %>" alt="Foto van smartzone <%= smartzone.name %>">
+                </div>
+                <div class="card-right-side">
+                    <% if (smartzone.reservation === null) { %>
+                    <p>Now available</p> <!-- Icon toevoegen -->
+                        <% } else { %>
+                    <p>Occupied</p> <!-- Icon toevoegen -->
+                    <% } %>
+                    <!-- Icon hartje toevoegen -->
+                    <h2>SZ <%= smartzone.name %></h2>
+                    <p><%= smartzone.address %>, <%= smartzone.town %></p>
+                    <p><span>Price:</span> €1,00 / 15 min</p> <!-- Voor nu hard code omdat die gegevens nog ontbreken -->
+                    <div class="buttons">
+                        <button>Book now</button>
+                        <button>Book later</button>
+                    </div>
+                </div>
             </article>
             <% }) %>
-        </section>
-        
-        <section>
-        <img src="assets/img/placeholder-kaart.jpg" alt="">
+        <%- include('./partials/nav') %>
     </section>
+        
+    <!-- <section class="map">
+        <img src="assets/img/placeholder-kaart.jpg" alt="">
+    </section> -->
 </main>
-
-<%- include('./partials/nav') %>
 
 <%- include('./partials/foot') %>
