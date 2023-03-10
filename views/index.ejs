@@ -1,0 +1,31 @@
+<%- include('./partials/head') %>
+
+<main>
+    <section>
+        <h1>Smartzones</h1>
+        <% smartzones.forEach(smartzone => { %>
+            <article>
+                <img src="<%- smartzone.image[0].url %>" alt="Foto van smartzone <%= smartzone.name %>">
+                <% if (smartzone.reservation === null) { %>
+                 <p>Now available</p> <!-- Icon toevoegen -->
+                    <% } else { %>
+                  <p>Occupied</p> <!-- Icon toevoegen -->
+                <% } %>
+                <!-- Icon hartje toevoegen -->
+                <h2>SZ <%= smartzone.name %></h2>
+                <p><%= smartzone.address %>, <%= smartzone.town %></p>
+                <p><span>Price:</span> €1,00 / 15 min</p> <!-- Voor nu hard code omdat die gegevens nog ontbreken -->
+                <button>Book now</button>
+                <button>Book later</button>
+            </article>
+            <% }) %>
+        </section>
+        
+        <section>
+        <img src="assets/img/placeholder-kaart.jpg" alt="">
+    </section>
+</main>
+
+<%- include('./partials/nav') %>
+
+<%- include('./partials/foot') %>
