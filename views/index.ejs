@@ -2,13 +2,18 @@
 
 <main>
     <section class="menu-bar">
-        <img src="assets/img/logo-purple.png" alt="Logo Coding the Curbs" class="logo">
+        <div class="logo-bar">
+            <img src="assets/img/logo-purple.png" alt="Logo Coding the Curbs" class="logo">
+        </div>
+
         <h1>Smartzones</h1>
+
         <% smartzones.forEach(smartzone => { %>
             <article class="sz-card">
                 <div class="card-left-side">
                     <img src="<%- smartzone.image[0].url %>" alt="Foto van smartzone <%= smartzone.name %>">
                 </div>
+
                 <div class="card-right-side">
                     <% if (smartzone.reservation === null) { %>
                     <p>Now available</p> <!-- Icon toevoegen -->
@@ -17,16 +22,21 @@
                     <% } %>
                     <!-- Icon hartje toevoegen -->
                     <h2>SZ <%= smartzone.name %></h2>
+
                     <p><%= smartzone.address %>, <%= smartzone.town %></p>
-                    <p><span>Price:</span> €1,00 / 15 min</p> <!-- Voor nu hard code omdat die gegevens nog ontbreken -->
+
+                    <p><span>Price:</span> € 1,00 / 15 min</p> <!-- Voor nu hard code omdat die gegevens nog ontbreken -->
+
                     <div class="buttons">
                         <button>Book now</button>
                         <button>Book later</button>
                     </div>
                 </div>
             </article>
-            <% }) %>
+        <% }) %>
+
         <%- include('./partials/nav') %>
+
     </section>
         
     <!-- <section class="map">
