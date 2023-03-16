@@ -1,31 +1,33 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# Overzichtspagina
+Een overzichtspagina met alle smartzones en waar deze te vinden zijn.
 
 ## Inhoudsopgave
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+  * [📄 Beschrijving](#-beschrijving)
+  * [📌 Kenmerken](#-kenmerken)
+  * [⚙️ Installatie](#-installatie)
+  * [💻 Gebruik](#-gebruik)
+  * [📁 Bronnen](#-bronnen)
+  * [🔒 Licentie](#-licentie)
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+## 📄 Beschrijving
+(Nog in te vullen)
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+<img src="https://user-images.githubusercontent.com/112859814/225651550-94876458-f573-4dcc-80ac-3c72c5ea93f0.jpg" alt="Desktop" width=100%>
 
-## Installatie
+De website vind je [hier](https://plum-alert-sea-lion.cyclic.app/).
 
-## Gebruik
+## 📌 Kenmerken
+Voor dit project heb ik met node.js, express en ejs gewerkt. Daarnaast heb ik ook gewoon gebruik gemaakt van een css document.
 
-## Bronnen
+## ⚙️ Installatie
+(Nog in te vullen)
 
-## Licentie
+## 💻 Gebruik
+(Nog in te vullen)
 
+## 📁 Bronnen
+Voor de smartzones heb ik data gebruikt uit de API. Deze is te vinden op https://api.codingthecurbs.fdnd.nl/.
+
+## 🔒 Licentie
 This project is licensed under the terms of the [MIT license](./LICENSE).
